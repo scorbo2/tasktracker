@@ -1,0 +1,86 @@
+TaskTracker Release Notes
+Author: Steve Corbett
+
+Version 2.0 [TODO] - Complete rewrite with extensions
+
+Version 1.3 [2023-04-16] - Maintenance release
+  [TRACK-69] - New Ticket frame should be smarter
+  [TRACK-70] - Need a way to delete tickets
+  [TRACK-71] - Allow tab key on new ticket dialog
+  [TRACK-72] - Consider a kanban or todo workflow
+  [TRACK-73] - ReleaseNotes should include version description
+  [TRACK-74] - Ticket completion dialog doesn't scroll
+  [TRACK-75] - Upgrade to sc-util 1.7
+  [TRACK-76] - Migrate from Preferences to FileBasedProperties
+
+Version 1.2 [2022-05-10] - Maintenance release
+  [TRACK-61] - Minor: AboutDialog is showing wrong copyright year
+  [TRACK-62] - Adding a comment to a Ticket is painful
+  [TRACK-63] - Upgrade to sc-util 1.6
+  [TRACK-65] - Update installer script
+  [TRACK-66] - Update release notes for 1.2 release
+  [TRACK-67] - Ensure default logging.properties logs to file
+
+Version 1.1 [2022-04-11] - Maintenance release
+  [TRACK-30] - Board hotlist editor
+  [TRACK-37] - Need a way to view all boards
+  [TRACK-48] - Package a logo.png in the distribution directory
+  [TRACK-49] - Add a "show in board list" column to Project
+  [TRACK-50] - MainWindow.setVisible(false) is not a great place to close the db connection
+  [TRACK-51] - Minor: project list not sorting alphabetically
+  [TRACK-52] - Would be cool to see hoursWorked rolled up somewhere
+  [TRACK-53] - Project updates for 1.1 release
+  [TRACK-54] - Upgrade to sc-util 1.5
+  [TRACK-55] - Possible bug: are version labels not unique?
+  [TRACK-56] - Bug: ticket stats dialog isn't rounding
+  [TRACK-57] - Changes required by sc-util changes
+  [TRACK-58] - Make better use of logging
+  [TRACK-59] - Add more granular time logging options
+  [TRACK-60] - Install a default logging.properties file
+
+Version 1.0 [2020-10-07] - Initial version
+  [TRACK-1] - Create skeletal project
+  [TRACK-2] - Create TaskPane menu on left
+  [TRACK-3] - Add DAO and ModelObject layer
+  [TRACK-4] - TicketDao
+  [TRACK-5] - Service layer
+  [TRACK-6] - Nuke the MemoryDao entirely
+  [TRACK-7] - ProjectDao
+  [TRACK-8] - ProjectVersionDao
+  [TRACK-9] - Upgrade to sc-util-1.4
+  [TRACK-10] - Need to think about a ModelObject caching mechanism
+  [TRACK-11] - Consider a ModelObjectChangeListener or some such
+  [TRACK-12] - TicketCommentDao
+  [TRACK-13] - Board and BoardFilterItem dao
+  [TRACK-14] - Sqlite daos: precache all model objects on startup
+  [TRACK-15] - UI: Project creation dialog
+  [TRACK-16] - UI: need a way to connect/disconnect Services
+  [TRACK-17] - UI: datasource statistics
+  [TRACK-18] - Create a canned "demo" data source
+  [TRACK-19] - Service layer unit tests
+  [TRACK-20] - Clean up the connection factory methods
+  [TRACK-21] - Add "isTransient" to Board
+  [TRACK-22] - Need a way to actually execute a board filter
+  [TRACK-23] - Need a state between "in progress" and "closed"
+  [TRACK-24] - Project list dialog
+  [TRACK-25] - StatefulInternalFrame seems a bit flakey
+  [TRACK-26] - Project version view/edit frame
+  [TRACK-27] - Need a way to delete projects
+  [TRACK-28] - Wonky bug when deleting model objects
+  [TRACK-29] - Preferences dialog
+  [TRACK-31] - Board display
+  [TRACK-32] - Tickets need a "display id"
+  [TRACK-33] - Ticket resolution dialog
+  [TRACK-34] - Move the parsing of cmdline args from Main to MainWindow
+  [TRACK-35] - Export JIRA data to a sql file for import into TaskTracker
+  [TRACK-36] - Ticket creation dialog
+  [TRACK-38] - Ticket view/edit frame
+  [TRACK-39] - Release Notes frame
+  [TRACK-40] - DataSourceInfoFrame needs an "import" button
+  [TRACK-41] - Make sure that the Board hotlist is updated when a Project is added and when connecting to a datasource.
+  [TRACK-42] - Ticket search dialog
+  [TRACK-43] - Need a way to release a given version
+  [TRACK-44] - Project Version delete
+  [TRACK-45] - Shouldn't be allowed to assign a ticket to a released version
+  [TRACK-46] - Should have global shortcut keys
+  [TRACK-47] - Dropping a ticket on the in progress column should set start date

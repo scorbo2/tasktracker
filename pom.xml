@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>ca.corbett</groupId>
+    <artifactId>tasktracker</artifactId>
+    <version>2.0-SNAPSHOT</version>
+
+    <name>tasktracker</name>
+    <description>TaskTracker - an extensible task tracker in Java Swing</description>
+    <url>https://github.com/scorbo2/tasktracker</url>
+
+    <licenses>
+        <license>
+            <name>MIT License</name>
+            <url>https://opensource.org/license/mit</url>
+        </license>
+    </licenses>
+
+    <developers>
+        <developer>
+            <name>Steve Corbett</name>
+            <email>steve@corbett.ca</email>
+            <organization>corbett.ca</organization>
+            <organizationUrl>http://www.corbett.ca</organizationUrl>
+        </developer>
+    </developers>
+
+    <scm>
+        <connection>scm:git:git://github.com/scorbo2/tasktracker.git</connection>
+        <developerConnection>scm:git:ssh://github.com:scorbo2/tasktracker.git</developerConnection>
+        <url>http://github.com/scorbo2/tasktracker/tree/master</url>
+    </scm>
+
+    <properties>
+        <maven.compiler.source>17</maven.compiler.source>
+        <maven.compiler.target>17</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>ca.corbett</groupId>
+            <artifactId>swing-extras</artifactId>
+            <version>2.3.0</version>
+        </dependency>
+    </dependencies>
+</project>
