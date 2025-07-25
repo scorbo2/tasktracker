@@ -1,5 +1,6 @@
 package ca.corbett.tasktracker.model;
 
+import ca.corbett.tasktracker.date.YMDDate;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.JsonNode;
@@ -10,7 +11,6 @@ import java.awt.Color;
 import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
-import java.util.Date;
 import java.util.UUID;
 
 /**
@@ -23,7 +23,7 @@ public class Project {
     protected String prefix;
     protected String name;
     protected String description;
-    protected Date startDate;
+    protected YMDDate startDate;
     protected Integer bgColor;
     protected Integer fgColor;
 
@@ -76,7 +76,7 @@ public class Project {
         return this;
     }
 
-    public Project setStartDate(Date date) {
+    public Project setStartDate(YMDDate date) {
         startDate = date;
         return this;
     }
@@ -103,7 +103,7 @@ public class Project {
         return description;
     }
 
-    public Date getStartDate() {
+    public YMDDate getStartDate() {
         return startDate;
     }
 
@@ -165,11 +165,12 @@ public class Project {
      *
      * @throws IOException If something goes wrong.
      */
-    public void save() throws IOException {
-        if (sourceFile == null) {
-            // TODO first-time save... generate new file... we need a "project dir"
-            throw new IOException("Cannot save: no source path set");
-        }
+    public void save(File f) throws IOException {
+//        if (sourceFile == null) {
+//            // TODO first-time save... generate new file... we need a "project dir"
+//            throw new IOException("Cannot save: no source path set");
+//        }
+        this.sourceFile = f; // TEMP TEMP TODO REMOVE ME
 
         // Save project.json
         objectMapper.writeValue(sourceFile, this);
